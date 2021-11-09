@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.a6cf9daf.chunk.css",
+    "main.js": "/myportfolio/static/js/main.5ac6799a.chunk.js",
+    "main.js.map": "/myportfolio/static/js/main.5ac6799a.chunk.js.map",
+    "runtime-main.js": "/myportfolio/static/js/runtime-main.b5f0a273.js",
+    "runtime-main.js.map": "/myportfolio/static/js/runtime-main.b5f0a273.js.map",
+    "static/js/2.5f969414.chunk.js": "/myportfolio/static/js/2.5f969414.chunk.js",
+    "static/js/2.5f969414.chunk.js.map": "/myportfolio/static/js/2.5f969414.chunk.js.map",
+    "index.html": "/myportfolio/index.html",
+    "precache-manifest.8818bb1dd4e4f898ff60fca654de81a1.js": "/myportfolio/precache-manifest.8818bb1dd4e4f898ff60fca654de81a1.js",
+    "service-worker.js": "/myportfolio/service-worker.js",
+    "static/css/main.a6cf9daf.chunk.css.map": "/myportfolio/static/css/main.a6cf9daf.chunk.css.map",
+    "static/js/2.5f969414.chunk.js.LICENSE.txt": "/myportfolio/static/js/2.5f969414.chunk.js.LICENSE.txt",
+    "static/media/giris.jpeg": "/myportfolio/static/media/giris.e4a57767.jpeg",
+    "static/media/github.svg": "/myportfolio/static/media/github.bb69c970.svg",
+    "static/media/icons8-instagram.svg": "/myportfolio/static/media/icons8-instagram.66aa0787.svg",
+    "static/media/icons8-javascript.svg": "/myportfolio/static/media/icons8-javascript.f6967c81.svg",
+    "static/media/icons8-linkedin-2.svg": "/myportfolio/static/media/icons8-linkedin-2.aafc41f6.svg",
+    "static/media/icons8-material-ui.svg": "/myportfolio/static/media/icons8-material-ui.d4a8ef06.svg",
+    "static/media/icons8-react.svg": "/myportfolio/static/media/icons8-react.3b599a68.svg",
+    "static/media/icons8-redux.svg": "/myportfolio/static/media/icons8-redux.a248a991.svg",
+    "static/media/icons8-typescript.svg": "/myportfolio/static/media/icons8-typescript.265f3327.svg",
+    "static/media/icons8-vkontakte.svg": "/myportfolio/static/media/icons8-vkontakte.03b8a63c.svg",
+    "static/media/App.css": "/myportfolio/static/media/main-bg.c3255fc4.jpg",
+    "static/media/restapi.svg": "/myportfolio/static/media/restapi.e4356db9.svg",
+    "static/media/story.svg": "/myportfolio/static/media/story.2c0ef392.svg",
+    "static/media/unitest.svg": "/myportfolio/static/media/unitest.8766f6dd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5f0a273.js",
+    "static/js/2.5f969414.chunk.js",
+    "static/css/main.a6cf9daf.chunk.css",
+    "static/js/main.5ac6799a.chunk.js"
+  ]
+}
