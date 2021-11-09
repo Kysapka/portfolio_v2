@@ -1,0 +1,125 @@
+@import '../../u0-common/u0.3-styles/mixins';
+
+.contactBlock {
+    position: relative;
+    height: auto;
+    padding: 60px 0;
+    background-color: var(--second-bg-color);
+
+    .messageSuccess {
+        @include display(flex, center, center);
+        opacity: 0;
+        padding: 10px;
+        max-width: 290px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #292927;
+        border: 1px solid white;
+        border-radius: 6px;
+        z-index: 1;
+        transition: all 400ms ease;
+
+        span {
+            text-align: center;
+            color: #e7e1e1;
+        }
+    }
+
+    .container {
+        @include container();
+        @include display(flex, $f-der: column);
+
+        .formWrapper {
+            @include display(flex, flex-start, center, $f-der: column);
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+
+            .contactForm {
+                position: relative;
+                @include display(flex, $align-items: center, $f-der: column);
+                width: 100%;
+
+                .notificationEmail {
+                    color: #d9342c;
+                    position: absolute;
+                    top: 50px;
+                    right: 1px;
+                    font-size: 13px;
+                }
+
+                .notificationName {
+                    color: #d9342c;
+                    position: absolute;
+                    top: 120px;
+                    right: 1px;
+                    font-size: 13px;
+                }
+
+                input, textarea {
+                    width: 100%;
+                    height: 50px;
+                    padding: 0 20px;
+                    outline: none;
+                    margin-bottom: 20px;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    letter-spacing: .1px;
+                    border: 3px solid rgba(255, 255, 255, .2);
+                    color: rgba(198, 201, 216, .75);
+                    background: 0 0;
+
+                    &::placeholder {
+                        color: #717173;
+                    }
+                }
+
+                input {
+                    caret-color: #f9004d;
+                }
+
+                textarea {
+                    height: 150px;
+                    resize: none;
+                    font-family: 'Poppins', sans-serif;
+                    caret-color: #f9004d;
+                }
+
+                .contactBtn {
+                    border: 3px solid #f9004d;
+                    background: #f9004d;
+                    cursor: pointer;
+                    max-width: 60%;
+                    width: 100%;
+                    height: 59px;
+                    color: #fff;
+                    @include text(16px, 600);
+                    letter-spacing: 2px;
+                    border-radius: 6px;
+                    transition: .3s;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        border: 3px solid #f9004d;
+                        box-shadow: 0 10px 15px 0 rgba(249, 0, 77, .1);
+                        background: 0 0;
+                        color: #f9004d;
+                        transform: translateY(-5px);
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        max-width: 60%;
+                        height: 50px;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

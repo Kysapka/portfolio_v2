@@ -1,0 +1,88 @@
+@import '../../../u0-common/u0.3-styles/mixins';
+
+.skillItem {
+    display: flex;
+    padding: 0 15px;
+    max-width: 33.333333%;
+    width: 100%;
+    margin: 30px 0 0;
+    position: relative;
+
+    .skillBlock {
+        @include display(flex, $align-items: flex-start, $f-der: column);
+        padding: 20px 35px;
+        border-radius: 10px;
+        background-color: var(--skills-card-background-color);
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        transition: all .3s cubic-bezier(.645, .045, .355, 1);
+
+        &:before {
+            @include position(absolute, 0, $left: 0);
+            content: "";
+            background-image: linear-gradient(to right, #203f46, #0c0c0cbd);
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            opacity: 0;
+            transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+
+            p {
+                color: #ffffff;
+            }
+        }
+
+        &:hover:before {
+            opacity: 1;
+        }
+
+        .wrapper {
+            z-index: 1;
+            position: relative;
+
+            .icon {
+                @include display(flex, center, center);
+                width: 60px;
+                height: 60px;
+                background-color: #efefed;
+                border-radius: 6%;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    opacity: .8;
+                }
+            }
+
+            h3 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                transition: all .3s cubic-bezier(.645, .045, .355, 1);
+                @media screen and (max-width: 790px) {
+                    color: #ffffff;
+                }
+            }
+        }
+
+        @media screen and (max-width: 790px) {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+
+    @media screen and (min-width: 700px) and (max-width: 1240px) {
+        max-width: 49.333333%;
+    }
+    @media screen and (max-width: 790px) {
+        max-width: 100%;
+    }
+}

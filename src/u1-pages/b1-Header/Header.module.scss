@@ -1,0 +1,105 @@
+@import '../../u0-common/u0.3-styles/mixins';
+
+.headerArea {
+   display: flex;
+   height: 80px;
+   width: 100%;
+   z-index: 2;
+   position: fixed;
+   background-color: rgba(14, 13, 13, 0.7);
+   justify-content: center;
+
+   .headerWrapper {
+      @include display(flex, space-between);
+      width: 80%;
+      z-index: 999;
+
+      .headerLeft {
+         @include display(flex, $align-items: center);
+         @media screen and (max-width: 991px) {
+            display: none;
+         }
+      }
+
+      .headerRight {
+         @include display(flex, flex-end, center, $wrap: wrap);
+         width: auto;
+
+         .fullOverlay {
+            display: none;
+            @include position(absolute, 0, $left: 0);
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, .7);
+            transition: .3s;
+         }
+
+         .activeFullOverlay {
+            display: block;
+         }
+
+         .headerBtnWrapper {
+            margin-left: 50px;
+
+            .headerBtn {
+               color: white;
+               border: 3px solid rgba(255, 255, 255, .3);
+               padding: 0 25px;
+               height: 46px;
+               border-radius: 6px;
+               @include text(14px);
+               position: relative;
+               z-index: 2;
+               letter-spacing: 1px;
+               transition: all .3s cubic-bezier(.645, .045, .355, 1);
+
+               &:hover {
+                  background-color: #f9004d;
+                  border: 3px solid #f9004d;
+                  transform: translateY(-3px);
+               }
+            }
+
+            @media screen and (max-width: 1199px) {
+               margin-left: 10px;
+            }
+            @media screen and (max-width: 767px) {
+               display: none;
+            }
+         }
+
+         .hamburgerMenu {
+            padding-left: 20px;
+            display: none;
+            justify-content: flex-end;
+            width: auto;
+
+            .menuTrigger {
+               cursor: pointer;
+
+               img {
+                  width: 30px;
+                  position: relative;
+                  z-index: 100;
+               }
+            }
+
+            @media screen and (max-width: 991px) {
+               display: block;
+            }
+         }
+      }
+
+      @media screen and (max-width: 991px) {
+         justify-content: flex-end;
+         padding: 15px 0;
+      }
+      @media screen and (max-width: 767px) {
+         justify-content: flex-end;
+      }
+   }
+
+   @media screen and (max-width: 991px) {
+      position: fixed;
+   }
+}

@@ -1,0 +1,48 @@
+@import '../../../../u0-common/u0.3-styles/mixins';
+
+.mainMenu {
+   display: block;
+   @include position(fixed, -18px, 99);
+   background: #101010;
+   width: 40vw;
+   height: 100vh;
+   z-index: 99;
+   -webkit-transition: all .3s cubic-bezier(.77, .2, .05, 1);
+   -o-transition: all .3s cubic-bezier(.77, .2, .05, 1);
+   transition: all .3s cubic-bezier(.77, .2, .05, 1);
+   overflow-y: auto;
+   padding: 100px 30px;
+
+   .menuItem {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      cursor: pointer;
+      @include text(16px, 500, 28px);
+
+      a {
+         position: relative;
+         color: rgba(198, 201, 216, .75);
+         background: 0 0;
+         display: block;
+         padding: 10px 0;
+         @include text(16px);
+
+         &:before {
+            @include position(absolute, $left: 0);
+            @include navStyle(scaleX(0));
+         }
+
+         &:hover:before {
+            @include navStyle(scaleX(1), 30%);
+         }
+
+         &.active:before {
+            //@include position(absolute, $left: 0);
+            @include navStyle(scaleX(1), 100%);
+         }
+      }
+   }
+}
+
+

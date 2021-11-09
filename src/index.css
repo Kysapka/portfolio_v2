@@ -1,0 +1,81 @@
+* {
+   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #f9004d;
+}
+
+body {
+   font-family: 'Poppins', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+   sans-serif;
+
+   margin: 0;
+
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+   --first-bg-color: #101010;
+   --second-bg-color: #191919;
+   --main-headline-text: rgba(198, 201, 216, .75);
+   --main-headline-span: #f9004d;
+   --h3-headline: #fff;
+   --work-card-background-color: #101010;
+   --skills-card-background-color: #191919;
+   --skills-card-hover-bg-color: rgb(248, 31, 1);
+   --footer-share-hover-bg-color: #f9004d;
+   --navbar-menu-item-color: #fff;
+   --navbar-menu-item-hover-color: #f9004d;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+   monospace;
+}
+
+p {
+   font-weight: 300;
+   padding: 0;
+   font-size: 18px;
+   color: #717173;
+   margin: 0 0 40px;
+}
+
+h3 {
+   font-weight: 500;
+   font-size: 24px;
+   color: #fff;
+}
+
+h2 {
+   color: #fff;
+   margin: 0;
+   font-weight: 700;
+   font-size: 60px;
+}

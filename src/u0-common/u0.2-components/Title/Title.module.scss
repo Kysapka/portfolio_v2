@@ -1,0 +1,22 @@
+@import '../../u0.3-styles/mixins.scss';
+
+.defaultStyle {
+   @include text(60px, 700);
+   color: #fff;
+   word-break: break-word;
+   box-sizing: border-box;
+   text-align: center;
+
+   p {
+      text-align: center;
+      padding: 0 10%;
+      margin: 0 0 10px;
+   }
+
+   h1 {
+      @include text(60px, 700);
+      color: #fff;
+      margin: 0;
+      padding-top: 0;
+   }
+}

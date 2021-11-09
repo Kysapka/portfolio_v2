@@ -1,0 +1,17 @@
+@import '../../u0-common/u0.3-styles/mixins';
+
+.skillsBlock {
+   height: auto;
+   padding: 60px 0;
+   background-color: var(--first-bg-color);
+
+   .container {
+      @include container();
+      @include display(flex, $f-der: column);
+
+      .skills {
+         @include display(flex, flex-start, $wrap: wrap);
+         width: 100%;
+      }
+   }
+}

@@ -1,0 +1,61 @@
+.mainBg {
+   background-image: url("../u0-common/u0.1-assets/images/main-bg.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   z-index: -999;
+   background-attachment:fixed;
+}
+
+.particles {
+   position: absolute;
+   top:0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0.4;
+}
+
+@media (max-width: 1199px) {
+   .contactBtn {
+      max-width: 70%;
+   }
+
+   .mainBg:after {
+      display: block;
+   }
+}
+
+@media (max-width: 767px) {
+   .mainBg {
+      background-position-x: 60%;
+      background-size: cover;
+   }
+
+   .mainBg:after {
+      display: block;
+   }
+
+   .mainBg:before {
+      z-index: 2;
+      background-color: #000000;
+      width: 100%;
+      opacity: 0.3;
+   }
+
+   .contactBtn {
+      max-width: 70%;
+   }
+
+   .personalPhoto {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+
+
+}
+
+
+
+

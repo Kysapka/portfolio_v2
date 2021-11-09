@@ -1,0 +1,76 @@
+@import '../../u0-common/u0.3-styles/mixins';
+
+.footerWrapper {
+   display: flex;
+   height: auto;
+   padding: 20px 0px;
+   background-color: var(--first-bg-color);
+
+   .container {
+      @include container();
+      @include display(flex, $f-der: column);
+
+      .wrapper {
+         @include display(flex, space-between, center, wrap, $f-der: column);
+
+         .innerText {
+            text-align: center;
+
+            .socialShare {
+               @include display(flex, center);
+               margin: 0;
+               padding: 0;
+               list-style: none;
+
+               li {
+                  margin: 6px 5px;
+
+                  a {
+                     @include display(flex, center, center);
+                     width: 50px;
+                     height: 50px;
+                     font-size: 16px;
+                     border: 3px solid rgba(198, 201, 216, .75);
+                     color: rgba(198, 201, 216, .75);
+                     border-radius: 100%;
+                     text-decoration: none;
+                     background-color: transparent;
+                     transition: .3s;
+
+                     &:hover {
+                        background: var(--footer-share-hover-bg-color);
+                        border-color: var(--footer-share-hover-bg-color);
+                        box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .1);
+                        transform: translateY(-3px);
+                     }
+
+                     img {
+                        width: 16px;
+                     }
+                  }
+               }
+            }
+         }
+
+         p {
+            text-align: center;
+            padding: 10px;
+            @media screen and (max-width: 400px) {
+               @include display(flex, $wrap: wrap);
+               font-size: 16px;
+            }
+         }
+      }
+
+   }
+
+   @media screen and (max-width: 400px) {
+      margin: 0;
+   }
+}
+
+
+
+
+
+

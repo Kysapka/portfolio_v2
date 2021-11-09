@@ -1,0 +1,25 @@
+@import '../../u0-common/u0.3-styles/mixins';
+
+.offerBlock {
+   height: auto;
+   padding: 60px 0;
+   background-color: var(--first-bg-color);
+
+   .container {
+      @include container();
+      @include display(flex, flex-start, $f-der: column);
+
+      .offerBtn {
+         color: white;
+         border: 3px solid rgba(255, 255, 255, .3);
+
+         &:hover {
+            background-color: #f9004d;
+            border: 3px solid #f9004d;
+         }
+      }
+   }
+}
+
+
+

@@ -1,0 +1,71 @@
+@import '../../u0-common/u0.3-styles/mixins';
+
+.mainBlock {
+    @include display(flex, $align-items: center);
+    height: 100vh;
+
+    .container {
+        @include container();
+
+        .greeting {
+            @include display(flex, center, $f-der: column);
+            min-width: 200px;
+            height: 100%;
+            width: 100%;
+            max-width: 70%;
+            padding: 200px 0 15px;
+
+            .profession {
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                display: block;
+                margin-bottom: 20px;
+                color: var(--main-headline-text);
+                @media screen and (max-width: 767px) {
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+                @media screen and (max-width: 670px) {
+                    background-color: rgba(30, 30, 30, 0.9);
+                    width: max-content;
+                }
+            }
+
+            h1 {
+                @include text(75px, 900, 90px);
+                color: #fff;
+                margin: 0 0 15px 0;
+
+                .name {
+                    color: var(--main-headline-span);
+                    display: inline-block;
+                }
+
+                @media (max-width: 1199px) {
+                    @include text(58px, $line: 75px);
+                }
+
+                @media screen and (max-width: 767px) {
+                    max-width: 430px;
+                    @include text(37px, $line: 49px);
+                    margin-bottom: 20px;
+
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                max-width: 100%;
+            }
+            @media screen and (max-width: 767px) {
+                justify-content: flex-end;
+                padding: 0 0 10px 0;
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        min-height: 356px;
+    }
+}
