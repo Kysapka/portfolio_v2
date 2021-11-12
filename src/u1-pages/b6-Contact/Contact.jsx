@@ -31,7 +31,6 @@ export const Contact = React.memo(() => {
                 }
             })
             .catch(err => {
-                debugger
                 setError('username', 'validate');
                 setNotification({flag: true, message: 'Something went wrong:(The message was not sent'})
                 setTimeout(() => {
