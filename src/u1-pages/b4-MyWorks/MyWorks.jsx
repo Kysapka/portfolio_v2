@@ -35,7 +35,7 @@ export const MyWorks = () => {
                           }
                     />
                     <Work style={oneWork}
-                          link={'https://github.com/Kysapka/Web_chat_firebase'}
+                          link={'https://kysapka.github.io/Web_chat_firebase/'}
                           repLink={'https://github.com/Kysapka/Web_chat_firebase'}
                           projectName={'Web-chat'}
                           description={
